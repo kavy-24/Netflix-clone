@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700;900&family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.bg {
+    background-image: url("assets/images/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+.box {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+nav,
+.hero {
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 160px;
+    margin-top: 15px;
+}
+
+.lang {
+    background-color: rgba(0, 15, 30, 0.4);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 15px;
+    border: 1px solid white;
+    margin-right: 8px;
+}
+
+.sign {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.hero {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.text1,
+.text2 {
+    font-size: 56px;
+    font-weight: 900;
+    color: white;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+}
+
+.text3 {
+    font-size: 20px;
+    color: white;
+}
+
+.text4 {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+.get,
+.get1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+.email-id {
+    padding: 12px;
+    background-color: rgba(0, 15, 30, 0.4);
+    width: min(90%, 260px);
+    border: 1px solid white;
+    color: white;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.get-started {
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.bg2 {
+    height: 70px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.curve {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center,
+            rgba(30, 60, 120, 0.6) 0%,
+            rgba(0, 0, 0, 0.95) 60%);
+    box-shadow: inset 0 4px 0 #e50914;
+}
+
+
+
+.bg3 {
+    background-color: black;
+    padding: 40px 0;
+}
+
+.Trending {
+    color: white;
+    font-size: 24px;
+    margin-left: 10vw;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+.img {
+    display: flex;
+    gap: 40px;
+    padding: 20px 10vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.img::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card img {
+    height: 180px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.rank {
+    position: absolute;
+    left: -25px;
+    bottom: -50px;
+    font-size: 120px;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+    pointer-events: none;
+}
+
+
+
+.more {
+    color: white;
+    font-size: 24px;
+    margin-left: 10vw;
+    margin-top: 30px;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row img {
+    width: 80vw;
+    padding: 30px 0;
+}
+
+
+
+.faq {
+    max-width: 900px;
+    margin: auto;
+    color: white;
+}
+
+.Frequently {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #2d2d2d;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button button::after {
+    content: "+";
+    font-size: 30px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.ready {
+    margin: 40px 0;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .text1,
+    .text2 {
+        font-size: 36px;
+    }
+
+    .img {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .rank {
+        font-size: 90px;
+        bottom: -40px;
+    }
+
+    .get,
+    .get1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-id {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: #b3b3b3;
+    padding: 50px 10vw;
+    font-family: "Martel Sans", "Poppins", sans-serif;
+}
+
+.footer-title {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 40px;
+    margin-bottom: 30px;
+}
+
+.footer-grid a {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer-lang {
+    background-color: rgba(0, 15, 30, 0.6);
+    color: white;
+    border: 1px solid #b3b3b3;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.footer-country {
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
